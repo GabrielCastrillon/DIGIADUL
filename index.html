@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b75">
+  <meta name="description" content="DIGIADUL: aprendizaje digital seguro y accesible para adultos mayores de Medellín.">
+  <title>DIGIADUL | Aprende a tu ritmo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" data-route="inicio" aria-label="Ir al inicio de DIGIADUL">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span><strong>DIGIADUL</strong><small>Aprende a tu ritmo</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="text-button" id="font-toggle" type="button" aria-pressed="false">Aumentar texto</button>
+        <button class="icon-button" id="contrast-toggle" type="button" aria-pressed="false" aria-label="Activar alto contraste">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section id="inicio" class="page active" data-page="inicio" aria-labelledby="inicio-title">
+      <div class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Bienvenido a tu espacio de aprendizaje</p>
+          <h1 id="inicio-title">Aprende a usar la tecnología con confianza</h1>
+          <p class="lead">Lecciones sencillas y actividades prácticas para desenvolverte en el mundo digital de forma segura.</p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-route="modulos">Comenzar aprendizaje <span aria-hidden="true">→</span></button>
+            <button class="secondary-button" type="button" data-route="ayuda">¿Cómo funciona?</button>
+          </div>
+          <div class="trust-note"><span aria-hidden="true">✓</span> Contenido claro, gratuito y pensado para ti</div>
+        </div>
+        <div class="hero-illustration" aria-label="Ilustración decorativa de una persona aprendiendo con una tableta" role="img">
+          <div class="sun" aria-hidden="true"></div>
+          <div class="person" aria-hidden="true"><span class="head"></span><span class="body"></span><span class="tablet"></span></div>
+        </div>
+      </div>
+      <div class="container stats" aria-label="Resumen del programa">
+        <div><strong>4</strong><span>módulos prácticos</span></div>
+        <div><strong>12</strong><span>lecciones paso a paso</span></div>
+        <div><strong>100%</strong><span>a tu propio ritmo</span></div>
+      </div>
+    </section>
+
+    <section id="modulos" class="page" data-page="modulos" aria-labelledby="modulos-title">
+      <div class="container section-heading">
+        <p class="eyebrow">Tu ruta de aprendizaje</p>
+        <h1 id="modulos-title">¿Qué quieres aprender hoy?</h1>
+        <p>Elige un módulo. Puedes avanzar poco a poco y volver cuando lo necesites.</p>
+      </div>
+      <div class="container module-grid" id="module-grid"></div>
+      <div class="container progress-panel" aria-label="Progreso de aprendizaje">
+        <div class="progress-copy"><strong id="progress-title">Tu progreso</strong><span id="progress-label">0 de 4 módulos iniciados</span></div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar" style="width:0%"></div></div>
+      </div>
+    </section>
+
+    <section id="leccion" class="page" data-page="leccion" aria-labelledby="lesson-title">
+      <div class="container lesson-shell">
+        <button class="back-link" type="button" data-route="modulos">← Volver a módulos</button>
+        <div class="lesson-header">
+          <div><p class="eyebrow" id="lesson-module">Módulo</p><h1 id="lesson-title">Lección</h1></div>
+          <span class="lesson-step" id="lesson-step">Lección 1 de 3</span>
+        </div>
+        <div class="lesson-progress"><div id="lesson-progress-bar" class="progress-bar" style="width:33%"></div></div>
+        <article class="lesson-card">
+          <div class="lesson-icon" id="lesson-icon" aria-hidden="true">◉</div>
+          <div id="lesson-content"></div>
+          <div id="lesson-activity" class="activity-box"></div>
+          <div class="lesson-actions"><button class="secondary-button" type="button" data-route="modulos">Guardar y salir</button><button class="primary-button" id="complete-lesson" type="button">Marcar lección como completada <span aria-hidden="true">→</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ayuda" class="page" data-page="ayuda" aria-labelledby="help-title">
+      <div class="container narrow-page">
+        <button class="back-link" type="button" data-route="inicio">← Volver al inicio</button>
+        <p class="eyebrow">Una experiencia sencilla</p>
+        <h1 id="help-title">¿Cómo funciona DIGIADUL?</h1>
+        <div class="help-list">
+          <div><span>1</span><div><h2>Escoge un módulo</h2><p>Comienza por el tema que más te interese. No necesitas conocimientos previos.</p></div></div>
+          <div><span>2</span><div><h2>Lee y practica</h2><p>Encuentra explicaciones breves, ejemplos de la vida diaria y actividades sencillas.</p></div></div>
+          <div><span>3</span><div><h2>Avanza a tu ritmo</h2><p>Tu avance se guarda en este dispositivo. Puedes regresar a una lección cuando quieras.</p></div></div>
+        </div>
+        <div class="notice"><strong>Recuerda:</strong> DIGIADUL es un prototipo educativo. No solicita contraseñas ni datos bancarios.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 DIGIADUL</span><span>Aprendizaje digital seguro y accesible</span></div></footer>
+  <div id="live-region" class="sr-only" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
