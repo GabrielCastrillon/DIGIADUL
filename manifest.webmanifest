@@ -1,0 +1,11 @@
+{
+  "name": "DIGIADUL - Aprende a tu ritmo",
+  "short_name": "DIGIADUL",
+  "description": "Aprendizaje digital seguro y accesible para adultos mayores de Medellín.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fbff",
+  "theme_color": "#123b75",
+  "lang": "es-CO",
+  "icons": []
+}
